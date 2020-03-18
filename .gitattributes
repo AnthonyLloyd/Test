@@ -1,0 +1,6 @@
+* text=auto
+*.fs text eol=lf
+*.fsproj text eol=lf
+*.gitattributes text eol=lf
+*.gitignore text eol=lf
+*.md text eol=lf

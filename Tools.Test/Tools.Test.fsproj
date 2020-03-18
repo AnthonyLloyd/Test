@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="UtilsTest.fs" />
+    <Compile Include="TestTest.fs" />
+    <Compile Include="GenTest.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup />
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tools\Tools.fsproj" />
+  </ItemGroup>
+
+</Project>
