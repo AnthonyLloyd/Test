@@ -457,17 +457,17 @@ module Config =
     let inline private number case: Parser<'a> = parseWith tryParseNumber case
 
     let private options = [
-        "--filt", "Test name filters.", list string Filt
+        "--filt", "Test name filters (switch not required if first argument).", list string Filt
         "--para", "Number of parallel threads.", number Para
         "--seed", "First thread starts with this seed.", parseWith PCG.TryParse Seed
         "--iter", "Run tests randomly for this number of iterations (defaults to 1).", number Iter
         "--time", "Run tests randomly for this time in minutes.", number Time
         "--memo", "Memory limit in GB (defaults to 100 MB).", number Memo
-        "--wait", "Wait up to this number of minutes after last test started before reporting a timeout.", number Wait
+        "--wait", "Wait up to this number of minutes after last test started before reporting a timeout (defaults to 1).", number Wait
         "--info", "Include info messages in the output.", none Info
         "--skip", "Skip failed random, passed none random and passed faster tests.", none Skip
         "--stop", "Stop on first failure.", none Stop
-        "--nost", "No updating progress status.", none NoSt
+        "--nost", "No progress status spinner.", none NoSt
         "--nopr", "No console output.", none NoPr
     ]
 
